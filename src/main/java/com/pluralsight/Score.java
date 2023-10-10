@@ -16,8 +16,11 @@ public class Score {
         if (Integer.parseInt(teamScore[0]) > Integer.parseInt(teamScore[1])) {
             System.out.println("The winning team is :" + teamName[0]);
         }
-        else{
+        else if (Integer.parseInt(teamScore[0]) < Integer.parseInt(teamScore[1])){
             System.out.println("The winning team is :" + teamName[1]);
+        }
+        else if(Integer.parseInt(teamScore[0]) == Integer.parseInt(teamScore[1])){
+            System.out.println("The game ends in a draw.");
         }
 
 
